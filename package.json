@@ -1,5 +1,5 @@
 {
-  "name": "editorjs-accordion",
+  "name": "editorjs-accordion-delimiter",
   "version": "0.1.0",
   "keywords": [
     "codex editor",
@@ -8,7 +8,7 @@
     "editor.js",
     "editorjs"
   ],
-  "description": "Accordion Tool for Editor.js",
+  "description": "Accordion Delimiter Tool for Editor.js",
   "license": "MIT",
   "main": "./dist/bundle.js",
   "scripts": {

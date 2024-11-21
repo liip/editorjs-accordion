@@ -4,10 +4,10 @@
 require('./index.css').toString();
 
 /**
- * @typedef {Object} AccordionData
+ * @typedef {Object} AccordionDelimiterData
  * @description Tool's input and output data format
  */
-class Accordion {
+class AccordionDelimiter {
   /**
    * Notify core that read-only mode is supported
    * @return {boolean}
@@ -29,7 +29,7 @@ class Accordion {
 
     this._CSS = {
       block: this.api.styles.block,
-      wrapper: 'ce-accordion',
+      wrapper: 'ce-accordion-delimiter',
     };
 
     this._data = {};
@@ -45,7 +45,7 @@ class Accordion {
    */
   drawView() {
     let div = document.createElement('DIV');
-    div.innerText = `${this.api.i18n.t('Accordion')}`;
+    div.innerText = `${this.api.i18n.t('Accordion Delimiter')}`;
 
     div.classList.add(this._CSS.wrapper, this._CSS.block);
 
@@ -64,7 +64,7 @@ class Accordion {
   /**
    * Extract Tool's data from the view
    * @param {HTMLDivElement} toolsContent - Paragraph tools rendered view
-   * @returns {AccordionData} - saved data
+   * @returns {AccordionDelimiterData} - saved data
    * @public
    */
   save(toolsContent) {
@@ -86,4 +86,4 @@ class Accordion {
   }
 }
 
-module.exports = Accordion;
+module.exports = AccordionDelimiter;
